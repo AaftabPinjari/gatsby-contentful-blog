@@ -1,0 +1,48 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "cross-env .env.development gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^3.2.1",
+    "gatsby-image": "^3.3.0",
+    "gatsby-plugin-image": "^1.3.1",
+    "gatsby-plugin-react-helmet": "^4.3.0",
+    "gatsby-plugin-sharp": "^3.3.1",
+    "gatsby-remark-images": "^5.0.0",
+    "gatsby-remark-prismjs": "^5.0.0",
+    "gatsby-remark-relative-images": "^0.3.0",
+    "gatsby-source-filesystem": "^3.3.0",
+    "gatsby-transformer-remark": "^4.0.0",
+    "gatsby-transformer-sharp": "^3.3.0",
+    "prismjs": "^1.23.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
+    "eslint-plugin-prettier": "^3.3.1",
+    "gatsby-plugin-postcss": "^4.3.0",
+    "postcss": "^8.2.10",
+    "prettier": "2.2.1",
+    "tailwindcss": "^2.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
