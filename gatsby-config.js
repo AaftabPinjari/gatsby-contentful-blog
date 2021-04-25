@@ -3,6 +3,9 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
   /* Your site config here */
@@ -12,6 +15,13 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -38,7 +48,6 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 600,
-              maxHeight: 600,
               linkImagesToOriginal: false
             }
           }
